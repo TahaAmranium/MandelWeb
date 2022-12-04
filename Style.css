@@ -1,0 +1,31 @@
+#Help{
+        z-index: 10;
+        position: absolute;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgba(30, 30, 30, 0.6);
+        font-family: Comic Sans MS;
+        border: 2px solid rgba(20, 20, 20, 0.6);
+        color: rgb(255, 255, 255);
+        width: 230px;
+}
+
+body {
+        background-color: whitesmoke;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+}
+
+#MandelbrotCanvas{
+        background-color: antiquewhite;
+        position: absolute;
+        z-index: 0;
+}
+
+#ControlArea{
+        position: absolute;
+        z-index: 1;
+        width:100%;
+        height:100%;
+}

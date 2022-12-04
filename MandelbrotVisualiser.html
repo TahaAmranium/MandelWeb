@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fractal Visualiser</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="Help">
+			<h1>Mandelbrot :</h1>
+			<p>Instructions :</p>
+			<ul>
+				<li>Cliquez pour dézoomer</li>
+				<li>Tracez un rectangle avec la souris en maintenant le clic gauche enfoncé pour zoomer</li>
+				<li>Pour sauvegarder ce que vous voyez, clic droit sur l'image</li>
+			</ul>
+			<form id = "form">
+				<label for="IterationCount">Nombre d'itérations :</label>
+				<p id = "actualIter"></p>
+				<p>Mettez votre propre valeur ici</p>
+				<input name="IterationCount" id="IterationCount" type="text">
+				<button id="submission" type="submit" onclick="UpdateCanvasUserInput()">Regénérer la fractale</button>
+			</form>
+			<p id="msg+" hidden><br>Zooming IN...</p>
+			<p id="msg-" hidden><br>Dezooming OUT...</p>
+		</div>
+		<canvas id="MandelbrotCanvas">Consider updating your browser</canvas>
+		<canvas id="ControlArea">Consider updating your browser</canvas>
+
+		<script src="script.js"></script>
+	</body>
+</html>
