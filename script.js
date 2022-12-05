@@ -2,6 +2,7 @@
 
 function UpdateCanvasUserInput(){
 	UserMaxIter = parseInt(UserInputIter.value);
+	ActualIter.innerHTML="Actuellement : "+UserMaxIter;
 	console.log(UserMaxIter,UserInputIter,UserInputIter.value);
 	DrawMandel(UserMaxIter);
 }
@@ -89,11 +90,6 @@ var MandelLengthYUnScaled;
 var UserMaxIter = 50;
 ActualIter.innerHTML="Actuellement : "+UserMaxIter;
 var ZoomBox = null;
-
-FormIter.addEventListener('submit',(e) => {
-
-	e.preventDefault();
-})
 
 controls.onmousedown = function(e){
 	ZoomBox = [e.clientX, e.clientY, 0, 0];
